@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/drawable-v24/ic_home.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.25625" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/drawable/border.xml" value="0.2703125" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/drawable/ic_baseline_calendar.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.25625" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/drawable/ic_logout_black_24dp.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/drawable/rounded_bottom.xml" value="0.2703125" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/acitvity_splash_aeroup.xml" value="0.20471014492753623" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_agenda_layout.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_breve_layout.xml" value="0.1933876811594203" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_main.xml" value="0.2151268115942029" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_splashAeroUP.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_agenda.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_agenda_detalhe.xml" value="0.15534420289855072" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_aluno.xml" value="0.2151268115942029" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_base_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_breve_detalhe.xml" value="0.16" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_cadastro.xml" value="0.264" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_home.xml" value="0.1621376811594203" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/activity_tela_login.xml" value="0.264" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/content_layout.xml" value="0.1" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/dropdown_items.xml" value="0.11730072463768115" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/header_drawer.xml" value="0.1" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/layout/lista_items.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/ferna/AndroidStudioProjects/ProjAeroUP/app/src/main/res/menu/main_drawer_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

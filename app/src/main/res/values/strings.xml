@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AeroUp</string>
+    <string name="Digiteseuemail">Digite seu email</string>
+    <string name="Digitesuasenha">Digite sua senha</string>
+    <string name="Login">Login</string>
+    <string name="Logout">Deslogar</string>
+    <string name="Cadastrar">Cadastre-se</string>
+    <string name="Nome">Nome e sobrenome</string>
+    <string name="Idade">Idade</string>
+    <string name="Email">Email</string>
+    <string name="Senha">Senha</string>
+    <string name="CadastrarUsuario">Cadastrar</string>
+    <string name="Postagem">Digite aqui a sua postagem</string>
+    <string name="Publicar">Publicar</string>
+    <string name="Buscar">Digite o email do usuário</string>
+    <string name="Pesquisar">Buscar</string>
+    <string name="Selecione">Selecione a categoria</string>
+    <string name="menu_drawer_aberto">"Drawer Aberto"</string>
+    <string name="menu_drawer_fechado">"Drawer Fechado"</string>
+</resources>
