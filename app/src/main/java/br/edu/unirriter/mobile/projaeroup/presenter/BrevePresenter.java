@@ -21,9 +21,7 @@ public class BrevePresenter implements rvInterface {
     private List<Breve> listaBreves = new ArrayList<>();
     private TelaHome tela;
 
-    //Temporario
     private List<Breve> listaBrevesFake = new ArrayList<>();
-
 
     public BrevePresenter(TelaHome act) {
         this.tela = act;
@@ -50,8 +48,6 @@ public class BrevePresenter implements rvInterface {
         listaBrevesFake.add(new Breve("Voo de Carga 3","Indisponivel"));
         listaBrevesFake.add(new Breve("Voo de Carga 4","Indisponivel"));
 
-        //Mudar com Nuvem
-        //Temporário
         try {
             for (int i = 0; i <= listaBrevesFake.size()-1; i++) {
                 if(listaBrevesFake.get(i).getEstado() == item)

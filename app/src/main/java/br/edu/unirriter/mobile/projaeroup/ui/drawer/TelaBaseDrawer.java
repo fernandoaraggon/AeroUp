@@ -32,7 +32,6 @@ public class TelaBaseDrawer extends AppCompatActivity implements NavigationView.
         super.setContentView(drawerLayout);
 
         Toolbar toolbar = drawerLayout.findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         NavigationView navigationView =drawerLayout.findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -63,13 +62,5 @@ public class TelaBaseDrawer extends AppCompatActivity implements NavigationView.
                 break;
         }
         return false;
-    }
-
-    protected void allocateAcitivityTitle(String titleString)
-    {
-        if(getSupportActionBar() != null)
-        {
-            getSupportActionBar().setTitle(titleString);
-        }
     }
 }

@@ -62,6 +62,9 @@ public class AgendaAdapter extends RecyclerView.Adapter<AgendaAdapter.ViewHolder
 
         TextView tv = holder.view.findViewById(R.id.tvHora);
         tv.setText(agenda.getHora());
+
+        tv = holder.view.findViewById(R.id.tvData);
+        tv.setText(agenda.getData());
     }
 
     @Override

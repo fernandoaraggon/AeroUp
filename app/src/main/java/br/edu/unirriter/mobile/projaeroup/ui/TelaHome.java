@@ -30,7 +30,6 @@ public class TelaHome extends TelaBaseDrawer {
         super.onCreate(savedInstanceState);
         activityTelaHomeBinding = activityTelaHomeBinding.inflate(getLayoutInflater());
         setContentView(activityTelaHomeBinding.getRoot());
-        allocateAcitivityTitle("Home");
 
         //Lista items
         autoCompleteTxt = findViewById(R.id.auto_complete_txt);
