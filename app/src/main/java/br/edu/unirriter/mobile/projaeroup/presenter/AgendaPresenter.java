@@ -8,11 +8,8 @@ import java.util.List;
 
 import br.edu.unirriter.mobile.projaeroup.adapters.AgendaAdapter;
 import br.edu.unirriter.mobile.projaeroup.model.Agenda;
-import br.edu.unirriter.mobile.projaeroup.model.Breve;
 import br.edu.unirriter.mobile.projaeroup.ui.TelaAgenda;
 import br.edu.unirriter.mobile.projaeroup.ui.TelaAgendaDetalhe;
-import br.edu.unirriter.mobile.projaeroup.ui.TelaBreveDetalhe;
-import br.edu.unirriter.mobile.projaeroup.ui.TelaHome;
 import br.edu.unirriter.mobile.projaeroup.ui.rvInterface;
 
 public class AgendaPresenter implements rvInterface {
@@ -30,14 +27,15 @@ public class AgendaPresenter implements rvInterface {
     public void buscaAgenda() {
         listaAgendamentos.clear();
 
-        listaAgendamentos.add(new Agenda("14:00", "04/06/2022", "Teórico 1"));
+        listaAgendamentos.add(new Agenda("14:00", "04/06/2022",
+                "Teórico 1", "Instrutor: Carlos silva\nLocal: Aeroporto salgado filho\n"));
 
         tela.prepararRecyclerView(adapter);
     }
 
-    public void adicionaAgenda(String hora, String data, String titulo)
+    public void adicionaAgenda(String hora, String data, String titulo, String localinst)
     {
-        listaAgendamentos.add(new Agenda(hora, data, titulo));
+        listaAgendamentos.add(new Agenda(hora, data, titulo, localinst));
 
         Toast.makeText(tela.getApplicationContext(), "Agendado com sucesso",
                 Toast.LENGTH_SHORT).show();
@@ -66,6 +64,7 @@ public class AgendaPresenter implements rvInterface {
         agendaDetalhe.putExtra("hora", listaAgendamentos.get(pos).getHora());
         agendaDetalhe.putExtra("data",listaAgendamentos.get(pos).getData());
         agendaDetalhe.putExtra("titulo",listaAgendamentos.get(pos).getTitulo());
+        agendaDetalhe.putExtra("localinst",listaAgendamentos.get(pos).getLocalinst());
         tela.startActivity(agendaDetalhe);
     }
 }

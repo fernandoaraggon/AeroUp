@@ -21,7 +21,7 @@ public class BrevePresenter implements rvInterface {
     private List<Breve> listaBreves = new ArrayList<>();
     private TelaHome tela;
 
-    private List<Breve> listaBrevesFake = new ArrayList<>();
+    private List<Breve> listaBrevesTemp = new ArrayList<>();
 
     public BrevePresenter(TelaHome act) {
         this.tela = act;
@@ -30,32 +30,32 @@ public class BrevePresenter implements rvInterface {
     public void buscaBreve(String item)
     {
         listaBreves.clear();
-        listaBrevesFake.clear();
+        listaBrevesTemp.clear();
 
         BreveAdapter adapter = new BreveAdapter(listaBreves,this);
         tela.prepararRecyclerView(adapter);
 
-        listaBrevesFake.add(new Breve("Teórico 1","Pendente"));
-        listaBrevesFake.add(new Breve("Pratico 1","Pendente"));
-        listaBrevesFake.add(new Breve("Pratico 2","Pendente"));
-        listaBrevesFake.add(new Breve("Teórico 2","Concluido"));
-        listaBrevesFake.add(new Breve("Voo Comercial","Dísponivel"));
-        listaBrevesFake.add(new Breve("Voo Comercial 2","Dísponivel"));
-        listaBrevesFake.add(new Breve("Voo Comercial 3","Dísponivel"));
-        listaBrevesFake.add(new Breve("Voo Comercial 4","Dísponivel"));
-        listaBrevesFake.add(new Breve("Voo de Carga 1","Indisponivel"));
-        listaBrevesFake.add(new Breve("Voo de Carga 2","Indisponivel"));
-        listaBrevesFake.add(new Breve("Voo de Carga 3","Indisponivel"));
-        listaBrevesFake.add(new Breve("Voo de Carga 4","Indisponivel"));
+        listaBrevesTemp.add(new Breve("Teórico 1","Pendente"));
+        listaBrevesTemp.add(new Breve("Pratico 1","Pendente"));
+        listaBrevesTemp.add(new Breve("Pratico 2","Pendente"));
+        listaBrevesTemp.add(new Breve("Teórico 2","Concluido"));
+        listaBrevesTemp.add(new Breve("Voo Comercial","Dísponivel"));
+        listaBrevesTemp.add(new Breve("Voo Comercial 2","Dísponivel"));
+        listaBrevesTemp.add(new Breve("Voo Comercial 3","Dísponivel"));
+        listaBrevesTemp.add(new Breve("Voo Comercial 4","Dísponivel"));
+        listaBrevesTemp.add(new Breve("Voo de Carga 1","Indisponivel"));
+        listaBrevesTemp.add(new Breve("Voo de Carga 2","Indisponivel"));
+        listaBrevesTemp.add(new Breve("Voo de Carga 3","Indisponivel"));
+        listaBrevesTemp.add(new Breve("Voo de Carga 4","Indisponivel"));
 
         try {
-            for (int i = 0; i <= listaBrevesFake.size()-1; i++) {
-                if(listaBrevesFake.get(i).getEstado() == item)
+            for (int i = 0; i <= listaBrevesTemp.size()-1; i++) {
+                if(listaBrevesTemp.get(i).getEstado() == item)
                 {
-                    listaBreves.add(listaBrevesFake.get(i));
+                    listaBreves.add(listaBrevesTemp.get(i));
                 }else if(item == "Todos")
                 {
-                    listaBreves.add(listaBrevesFake.get(i));
+                    listaBreves.add(listaBrevesTemp.get(i));
                 }
             }
         }
@@ -66,7 +66,6 @@ public class BrevePresenter implements rvInterface {
 
     @Override
     public void onItemClick(int pos) {
-        //Mudar para Parceble
         Intent breveDetalhe = new Intent(tela.getApplicationContext(), TelaBreveDetalhe.class);
         breveDetalhe.putExtra("titulo", listaBreves.get(pos).getTitulo());
         tela.startActivity(breveDetalhe);

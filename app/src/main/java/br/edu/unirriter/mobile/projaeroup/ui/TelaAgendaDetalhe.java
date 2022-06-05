@@ -23,6 +23,7 @@ public class TelaAgendaDetalhe extends AppCompatActivity {
         String hora = getIntent().getStringExtra("hora");
         String data = getIntent().getStringExtra("data");
         String titulo = getIntent().getStringExtra("titulo");
+        String localinst = getIntent().getStringExtra("localinst");
 
         Button button = findViewById(R.id.timeButtonAgenda);
         button.setText(hora);
@@ -30,8 +31,11 @@ public class TelaAgendaDetalhe extends AppCompatActivity {
         button = findViewById(R.id.datePickerButtonAgenda);
         button.setText(data);
 
-        TextView tvTitulo = findViewById(R.id.tvTituloAgenda);
-        tvTitulo.setText(titulo);
+        TextView tvT = findViewById(R.id.tvTituloAgenda);
+        tvT.setText(titulo);
+
+        TextView tv  = findViewById(R.id.tvLocalinstAgenda);
+        tv.setText(localinst);
 
         botao = findViewById(R.id.buttonAlterar);
         botao.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +47,8 @@ public class TelaAgendaDetalhe extends AppCompatActivity {
                 telaAgenda.putExtra("data", botao.getText());
                 botao = findViewById(R.id.timeButtonAgenda);
                 telaAgenda.putExtra("hora", botao.getText());
-                telaAgenda.putExtra("titulo", tvTitulo.getText().toString());
+                telaAgenda.putExtra("titulo", tvT.getText().toString());
+                telaAgenda.putExtra("localinst", tv.getText().toString());
                 telaAgenda.putExtra("tela","AgendaDAltera");
                 getApplicationContext().startActivity(telaAgenda);
             }

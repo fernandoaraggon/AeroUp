@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primaryColor"
     tools:context=".ui.TelaAgendaDetalhe">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="48dp"
         android:text="Selecione data:"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -23,9 +24,9 @@
         style="?android:spinnerStyle"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:onClick="DatePickerAgenda"
-        android:text="5/6/2022"
+        android:text="05/06/2022"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintHorizontal_bias="0.496"
@@ -37,48 +38,73 @@
         android:id="@+id/timeButtonAgenda"
         android:layout_width="235dp"
         android:layout_height="65dp"
+        android:layout_marginTop="20dp"
         android:width="300dp"
         android:height="100dp"
+        android:backgroundTint="#E4E4E4"
         android:onClick="popTimePickerAgenda"
         android:text="Digite o Horário"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
+        app:layout_constraintTop_toBottomOf="@+id/datePickerButtonAgenda" />
+
+    <TextView
+        android:id="@+id/tvTituloAgenda"
+        android:layout_width="179dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="364dp"
+        android:background="#E4E4E4"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Titulo"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLocalinstAgenda"
+        android:layout_width="331dp"
+        android:layout_height="105dp"
+        android:background="#E4E4E4"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Info's"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAgenda"
+        app:layout_constraintVertical_bias="0.174" />
 
     <Button
         android:id="@+id/buttonAlterar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E4E4E4"
         android:text="Alterar"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E4E4E4"
         android:text="Cancelar"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintHorizontal_bias="0.198"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/tvTituloAgenda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="252dp"
-        android:text="titulo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,9 +4,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import br.edu.unirriter.mobile.projaeroup.R;
 import br.edu.unirriter.mobile.projaeroup.databinding.ActivityTelaAgendaBinding;
@@ -36,18 +33,17 @@ public class TelaAgenda extends TelaBaseDrawer {
         String data = getIntent().getStringExtra("data");
         String hora = getIntent().getStringExtra("hora");
         String tela = getIntent().getStringExtra("tela");
-        //local get
-        //instrutor get
+        String localinst = getIntent().getStringExtra("localinst");
 
         if("BreveD".equals(tela))
         {
-            presenterAgenda.adicionaAgenda(hora,data,titulo);
+            presenterAgenda.adicionaAgenda(hora,data,titulo,localinst);
         }else if("AgendaDCancela".equals(tela))
         {
             presenterAgenda.removerAgenda();
         }else if("AgendaDAltera".equals(tela))
         {
-            Agenda agendaAltera = new Agenda(hora,data,titulo);
+            Agenda agendaAltera = new Agenda(hora,data,titulo, localinst);
             presenterAgenda.alterarAgenda(agendaAltera);
         }
     }
